@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mini_nft_marketplace/core/resourses/assets_manager.dart';
+import 'package:mini_nft_marketplace/core/resources/assets_manager.dart';
 
 class CustomOnBoardingBackgroundPage extends StatelessWidget {
   const CustomOnBoardingBackgroundPage({super.key});
