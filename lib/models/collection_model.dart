@@ -4,6 +4,5 @@ class CollectionModel {
   bool activeLike;
   int countLike;
 
-  CollectionModel(this.image,this.title,this.countLike,this.activeLike);
+  CollectionModel(this.image, this.title, this.countLike, this.activeLike);
 }
-

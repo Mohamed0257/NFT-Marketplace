@@ -9,14 +9,13 @@ class OnBoardingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: Stack(
-            children: [
-              const CustomOnBoardingBackgroundPage(),
-              const CustomComponantOnBoardingPage(),
-            ],
-          ),
-
+        child: Stack(
+          children: [
+            const CustomOnBoardingBackgroundPage(),
+            const CustomComponantOnBoardingPage(),
+          ],
         ),
+      ),
     );
   }
 }

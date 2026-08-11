@@ -7,7 +7,7 @@ import 'package:mini_nft_marketplace/core/resources/size_manager.dart';
 import 'package:mini_nft_marketplace/models/how_new_items_model.dart';
 
 class CustomHowNewItems extends StatelessWidget {
-  const CustomHowNewItems({super.key, required this.howNewItemsModel,});
+  const CustomHowNewItems({super.key, required this.howNewItemsModel});
   final HowNewItemsModel howNewItemsModel;
   @override
   Widget build(BuildContext context) {
@@ -42,23 +42,50 @@ class CustomHowNewItems extends StatelessWidget {
                     width: WidthValues.w139,
                   ),
                 ),
-                SizedBox(height: 9,),
-                Text(howNewItemsModel.title,style: TextStyle(color: ColorManager.kColorWhite,fontWeight: FontWeight.bold,fontSize: FontSizeValues.fs12),),
-                Text(howNewItemsModel.supTitle,style: TextStyle(color: ColorManager.kColorGray350,fontSize: 11)),
-                SizedBox(height: 9,),
+                SizedBox(height: 9),
+                Text(
+                  howNewItemsModel.title,
+                  style: TextStyle(
+                    color: ColorManager.kColorWhite,
+                    fontWeight: FontWeight.bold,
+                    fontSize: FontSizeValues.fs12,
+                  ),
+                ),
+                Text(
+                  howNewItemsModel.supTitle,
+                  style: TextStyle(
+                    color: ColorManager.kColorGray,
+                    fontSize: 11,
+                  ),
+                ),
+                SizedBox(height: 9),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
                       children: [
-                        Icon(CupertinoIcons.bolt_fill,color: CupertinoColors.inactiveGray,),
-                        Text('${howNewItemsModel.count1}',style: TextStyle(color: Colors.white))
+                        Icon(
+                          CupertinoIcons.bolt_fill,
+                          color: CupertinoColors.inactiveGray,
+                        ),
+                        Text(
+                          '${howNewItemsModel.count1}',
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ],
                     ),
                     Row(
                       children: [
-                        Icon(CupertinoIcons.heart,color: howNewItemsModel.activeLike?ColorManager.kColorRed:ColorManager.kColorGray350,),
-                        Text("${howNewItemsModel.countLike}",style: TextStyle(color: Colors.white38)),
+                        Icon(
+                          CupertinoIcons.heart,
+                          color: howNewItemsModel.activeLike
+                              ? ColorManager.kColorRed
+                              : ColorManager.kColorGray,
+                        ),
+                        Text(
+                          "${howNewItemsModel.countLike}",
+                          style: TextStyle(color: Colors.white38),
+                        ),
                       ],
                     ),
                   ],

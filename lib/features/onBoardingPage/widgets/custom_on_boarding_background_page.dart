@@ -10,6 +10,7 @@ class CustomOnBoardingBackgroundPage extends StatelessWidget {
       width: double.infinity,
       height: double.infinity,
       fit: BoxFit.cover,
-      image: AssetImage(AssetsManager.onBoardingBackgroundImage),);
+      image: AssetImage(AssetsManager.onBoardingBackgroundImage),
+    );
   }
 }

@@ -13,7 +13,7 @@ class CustomTitleOnBoardingPage extends StatelessWidget {
       style: TextStyle(
         color: ColorManager.kColorWhite,
         fontWeight: FontWeight.bold,
-        fontSize:  FontSize.f36,
+        fontSize: FontSize.f36,
         fontFamily: FontsManager.cairoBold,
       ),
     );

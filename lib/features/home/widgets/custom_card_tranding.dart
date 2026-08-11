@@ -7,7 +7,7 @@ import 'package:mini_nft_marketplace/models/collection_model.dart';
 
 class CustomCardTranding extends StatelessWidget {
   const CustomCardTranding({super.key, required this.collectionModel});
-final CollectionModel collectionModel;
+  final CollectionModel collectionModel;
   @override
   Widget build(BuildContext context) {
     return UnconstrainedBox(
@@ -40,18 +40,29 @@ final CollectionModel collectionModel;
                   ),
                 ),
                 SizedBox(height: HeightValues.h9),
-                 Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(collectionModel.title, style: TextStyle(color: ColorManager.kColorWhite)),
-                      Row(
-                        children: [
-                          Icon(CupertinoIcons.heart_fill, color: collectionModel.activeLike?ColorManager.kColorRed:ColorManager.kColorGray350),
-                          Text('${collectionModel.countLike}', style: TextStyle(color: ColorManager.kColorWhite)),
-                        ],
-                      ),
-                    ],
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      collectionModel.title,
+                      style: TextStyle(color: ColorManager.kColorWhite),
+                    ),
+                    Row(
+                      children: [
+                        Icon(
+                          CupertinoIcons.heart_fill,
+                          color: collectionModel.activeLike
+                              ? ColorManager.kColorRed
+                              : ColorManager.kColorGray,
+                        ),
+                        Text(
+                          '${collectionModel.countLike}',
+                          style: TextStyle(color: ColorManager.kColorWhite),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ],
             ),
           ),

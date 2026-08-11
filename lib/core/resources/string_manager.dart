@@ -7,4 +7,7 @@ class StringManager {
   static const String subTitleHomePage = "Trending collections";
   static const String topSellerHomePage = "Top seller";
   static const String howNewItemsHomePage = "How New Items";
+  static const String stats = "Stats";
+  static const String ranking = "Ranking";
+  static const String activity = "Activity";
 }

@@ -1,4 +1,4 @@
-class TopSellerModel{
+class TopSellerModel {
   String image;
   String title;
   String supTitle;
@@ -6,5 +6,12 @@ class TopSellerModel{
   bool activeLike;
   int countLike;
 
-  TopSellerModel(this.image,this.title,this.supTitle,this.count1,this.countLike,this.activeLike);
+  TopSellerModel(
+    this.image,
+    this.title,
+    this.supTitle,
+    this.count1,
+    this.countLike,
+    this.activeLike,
+  );
 }

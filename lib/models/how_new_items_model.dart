@@ -1,4 +1,4 @@
-class HowNewItemsModel{
+class HowNewItemsModel {
   String image;
   String title;
   String supTitle;
@@ -6,5 +6,12 @@ class HowNewItemsModel{
   bool activeLike;
   int countLike;
 
-  HowNewItemsModel(this.image,this.title,this.supTitle,this.count1,this.countLike,this.activeLike);
+  HowNewItemsModel(
+    this.image,
+    this.title,
+    this.supTitle,
+    this.count1,
+    this.countLike,
+    this.activeLike,
+  );
 }
